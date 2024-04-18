@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &239969696 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5081457518067874799, guid: 81ebc52542bd0c74cb144f689ddbbb8a, type: 3}
+  m_PrefabInstance: {fileID: 1258680627048051285}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &290034318
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,6 +220,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -296,6 +302,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c0a25e0ff99014298e0783881d04f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 239969696}
 --- !u!1001 &528248570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2354,16 +2373,6 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 16, y: 7, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 19, y: 7, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 0
@@ -5045,13 +5054,13 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 440
+  - m_RefCount: 439
     m_Data: {fileID: 11400000, guid: ba4c87acdf00b7842bc18538b9cea745, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 440
+  - m_RefCount: 439
     m_Data: {fileID: 21300000, guid: cd7ae800e450e344a94a96c35727aad9, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 440
+  - m_RefCount: 439
     m_Data:
       e00: 1
       e01: 0
@@ -5070,7 +5079,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 440
+  - m_RefCount: 439
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -5334,9 +5343,9 @@ CompositeCollider2D:
       - X: 200000000
         Y: 10000000
       - X: 200000000
-        Y: 80000000
+        Y: 70000000
       - X: 190000000
-        Y: 80000000
+        Y: 70000000
       - X: 190000000
         Y: 20000000
       - X: 140000000
@@ -5569,8 +5578,8 @@ CompositeCollider2D:
       - {x: 14, y: -1.9999708}
       - {x: 14.000029, y: 1}
       - {x: 20, y: 1.0000293}
-      - {x: 19.999971, y: 8}
-      - {x: 19, y: 7.9999704}
+      - {x: 19.999971, y: 7}
+      - {x: 19, y: 6.9999704}
       - {x: 18.999971, y: 2}
       - {x: 14, y: 2.0000293}
       - {x: 13.999971, y: 5}
@@ -5849,6 +5858,10 @@ PrefabInstance:
     - target: {fileID: 3511916813844957027, guid: 81ebc52542bd0c74cb144f689ddbbb8a, type: 3}
       propertyPath: m_AngularDrag
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3511916813844957027, guid: 81ebc52542bd0c74cb144f689ddbbb8a, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3511916813844957027, guid: 81ebc52542bd0c74cb144f689ddbbb8a, type: 3}
       propertyPath: m_GravityScale
