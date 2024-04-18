@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Interactible : MonoBehaviour
+public class Interactable : MonoBehaviour
 {
     public bool isInRange;
     [SerializeField] KeyCode interactKey;
