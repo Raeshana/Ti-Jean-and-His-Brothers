@@ -13,12 +13,12 @@ public class SugarcaneManager : MonoBehaviour
     [SerializeField] TMP_Text sugarcaneCollHUD;
     private int sugarcaneColl;
 
+    [SerializeField] TMP_Text sugarcaneBurnedHUD;
+    private int sugarcaneBurned;
+
     // Start is called before the first frame update
     void Start()
     {
-        // initialize HUD messages
-        sugarcaneChoppedHUD.text = "Sugarcane Chopped: " + sugarcaneChopped + "/" + numSugarcane;
-        sugarcaneCollHUD.text = "Sugarcane Collected: " + sugarcaneColl + "/" + numSugarcane;
     }
 
     public void incrementSugarcaneChopped()
@@ -33,6 +33,12 @@ public class SugarcaneManager : MonoBehaviour
         sugarcaneCollHUD.text = "Sugarcane Collected: " + sugarcaneColl + "/" + numSugarcane;
     }
 
+    public void incrementSugarcaneBurned()
+    {
+        sugarcaneBurned++;
+        sugarcaneBurnedHUD.text = "Sugarcane Burned: " + sugarcaneBurned + "/" + numSugarcane;
+    }
+
     public bool isAllChopped()
     {
         if (sugarcaneChopped == numSugarcane)
@@ -45,6 +51,15 @@ public class SugarcaneManager : MonoBehaviour
     public bool isAllCollected()
     {
         if (sugarcaneColl == numSugarcane)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public bool isAllBurned()
+    {
+        if (sugarcaneBurned == numSugarcane)
         {
             return true;
         }

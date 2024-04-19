@@ -123,140 +123,109 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &120052344
-GameObject:
+--- !u!1001 &194957194
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 435746857}
+    m_Modifications:
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: instructionMsg
+      value: E to Burn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 194957196}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BurnSugarcane
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09461449
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5203794423217604471, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_Name
+      value: Sugarcane (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: chop
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: collect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcaneManager
+      value: 
+      objectReference: {fileID: 435746858}
+    - target: {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 6695199837026255028, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+    - {fileID: 605968585290780508, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+--- !u!4 &194957195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+  m_PrefabInstance: {fileID: 194957194}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 120052345}
-  - component: {fileID: 120052347}
-  - component: {fileID: 120052346}
-  m_Layer: 5
-  m_Name: Sugarcane Collected
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &120052345
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120052344}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 952490871}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -60, y: -60}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &120052346
+--- !u!114 &194957196 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+  m_PrefabInstance: {fileID: 194957194}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120052344}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 51fc2aef893160f4e8eb887749d9b9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'Sugarcane Collected:'
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &120052347
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120052344}
-  m_CullTransparentMesh: 1
 --- !u!4 &239969696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5081457518067874799, guid: 81ebc52542bd0c74cb144f689ddbbb8a, type: 3}
@@ -319,7 +288,7 @@ GameObject:
   - component: {fileID: 314892221}
   - component: {fileID: 314892220}
   m_Layer: 5
-  m_Name: Sugarcane Chopped
+  m_Name: Sugarcane Burned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,7 +333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sugarcane Chopped:'
+  m_text: 'Sugarcane Burned: 0/5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -472,10 +441,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1378690547}
-  - {fileID: 1450891197}
-  - {fileID: 729417996}
-  - {fileID: 589881945}
-  - {fileID: 528248571}
+  - {fileID: 194957195}
+  - {fileID: 1334115493}
+  - {fileID: 967651393}
+  - {fileID: 1414282934}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &435746858
@@ -491,8 +460,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numSugarcane: 5
-  sugarcaneChoppedHUD: {fileID: 314892220}
-  sugarcaneCollHUD: {fileID: 120052346}
+  sugarcaneChoppedHUD: {fileID: 0}
+  sugarcaneCollHUD: {fileID: 0}
+  sugarcaneBurnedHUD: {fileID: 314892220}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 239969696}
---- !u!1001 &528248570
+--- !u!1001 &967651392
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -607,79 +577,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 435746857}
     m_Modifications:
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.79
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: instructionMsg
+      value: E to Burn
       objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.09461449
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5203794423217604471, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: m_Name
-      value: Sugarcane (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-      propertyPath: sugarcaneManager
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 435746858}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
---- !u!4 &528248571 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-  m_PrefabInstance: {fileID: 528248570}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &589881944
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 435746857}
-    m_Modifications:
+      objectReference: {fileID: 967651394}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BurnSugarcane
+      objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.3
+      value: -21.98
       objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.1
+      value: -5.9
       objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -718,20 +634,45 @@ PrefabInstance:
       value: Sugarcane (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: chop
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: collect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6695199837026255028, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+    - {fileID: 605968585290780508, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
---- !u!4 &589881945 stripped
+--- !u!4 &967651393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-  m_PrefabInstance: {fileID: 589881944}
+  m_PrefabInstance: {fileID: 967651392}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &729417995
+--- !u!114 &967651394 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+  m_PrefabInstance: {fileID: 967651392}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fc2aef893160f4e8eb887749d9b9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1334115492
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -739,13 +680,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 435746857}
     m_Modifications:
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: instructionMsg
+      value: E to Burn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1334115494}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BurnSugarcane
+      objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.1
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.8
+      value: 5.95
       objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -784,101 +737,61 @@ PrefabInstance:
       value: Sugarcane (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: chop
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: collect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6695199837026255028, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+    - {fileID: 605968585290780508, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
---- !u!4 &729417996 stripped
+--- !u!4 &1334115493 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-  m_PrefabInstance: {fileID: 729417995}
+  m_PrefabInstance: {fileID: 1334115492}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &952490870
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 952490871}
-  - component: {fileID: 952490873}
-  - component: {fileID: 952490872}
-  m_Layer: 5
-  m_Name: Panel (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &952490871
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952490870}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 120052345}
-  m_Father: {fileID: 1663884573}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -300}
-  m_SizeDelta: {x: 800, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &952490872
+--- !u!114 &1334115494 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+  m_PrefabInstance: {fileID: 1334115492}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952490870}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 51fc2aef893160f4e8eb887749d9b9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &952490873
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952490870}
-  m_CullTransparentMesh: 1
 --- !u!4 &1378690547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
   m_PrefabInstance: {fileID: 5299260569029697866}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1450891196
+--- !u!114 &1378690548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+  m_PrefabInstance: {fileID: 5299260569029697866}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fc2aef893160f4e8eb887749d9b9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1414282933
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -886,13 +799,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 435746857}
     m_Modifications:
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: instructionMsg
+      value: E to Burn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1414282935}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BurnSugarcane
+      objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.9
+      value: -20.93
       objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.2
+      value: 8.98
       objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -928,22 +853,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5203794423217604471, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_Name
-      value: Sugarcane (1)
+      value: Sugarcane (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: chop
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: collect
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6695199837026255028, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+    - {fileID: 605968585290780508, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
---- !u!4 &1450891197 stripped
+--- !u!4 &1414282934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
-  m_PrefabInstance: {fileID: 1450891196}
+  m_PrefabInstance: {fileID: 1414282933}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1414282935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+  m_PrefabInstance: {fileID: 1414282933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51fc2aef893160f4e8eb887749d9b9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1527515883
 GameObject:
   m_ObjectHideFlags: 0
@@ -6458,7 +6408,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1628493522}
-  - {fileID: 952490871}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6496,7 +6445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5081457518067874799, guid: 81ebc52542bd0c74cb144f689ddbbb8a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.24
+      value: 8.95
       objectReference: {fileID: 0}
     - target: {fileID: 5081457518067874799, guid: 81ebc52542bd0c74cb144f689ddbbb8a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6547,6 +6496,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 435746857}
     m_Modifications:
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: instructionMsg
+      value: E to Burn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1378690548}
+    - target: {fileID: 2684558281668681306, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BurnSugarcane
+      objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.8
@@ -6595,8 +6556,14 @@ PrefabInstance:
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6695199837026255028, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+    - {fileID: 605968585290780508, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}

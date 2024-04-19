@@ -49,4 +49,12 @@ public class SugarcaneController : MonoBehaviour
             sugarcaneManager.incrementSugarcaneColl();
         }
     }
+
+    public void BurnSugarcane()
+    {
+        Destroy(gameObject);
+
+        // update sugarcane burned HUD
+        sugarcaneManager.incrementSugarcaneBurned();
+    }
 }
