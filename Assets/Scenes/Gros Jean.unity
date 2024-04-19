@@ -648,6 +648,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5203794423217604471, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_Name
       value: Sugarcane (4)
@@ -656,8 +664,17 @@ PrefabInstance:
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
@@ -714,6 +731,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5203794423217604471, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_Name
       value: Sugarcane (3)
@@ -722,8 +747,17 @@ PrefabInstance:
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
@@ -780,6 +814,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5203794423217604471, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_Name
       value: Sugarcane (2)
@@ -788,8 +830,17 @@ PrefabInstance:
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
@@ -927,6 +978,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5203794423217604471, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_Name
       value: Sugarcane (1)
@@ -935,8 +994,17 @@ PrefabInstance:
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
@@ -6588,6 +6656,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149305153534422651, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5203794423217604471, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_Name
       value: Sugarcane
@@ -6596,8 +6672,17 @@ PrefabInstance:
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6658475967651539051, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
