@@ -16,53 +16,49 @@ public class SugarcaneManager : MonoBehaviour
     [SerializeField] TMP_Text sugarcaneBurnedHUD;
     private int sugarcaneBurned;
 
-    // Start is called before the first frame update
-    void Start()
+    private int incrementSugarcane(int sugarcane, TMP_Text sugarcaneHUD, string message)
     {
+        sugarcane++;
+        sugarcaneHUD.text = message + sugarcane + "/" + numSugarcane;
+        return sugarcane;
+    }
+    
+    private bool isAllSugarcane(int sugarcane)
+    {
+        if (sugarcane == numSugarcane)
+        {
+            return true;
+        }
+        return false;
     }
 
     public void incrementSugarcaneChopped()
     {
-        sugarcaneChopped++;
-        sugarcaneChoppedHUD.text = "Sugarcane Chopped: " + sugarcaneChopped + "/" + numSugarcane;
+        sugarcaneChopped = incrementSugarcane(sugarcaneChopped, sugarcaneChoppedHUD, "Sugarcane Chopped: ");
     }
 
     public void incrementSugarcaneColl()
     {
-        sugarcaneColl++;
-        sugarcaneCollHUD.text = "Sugarcane Collected: " + sugarcaneColl + "/" + numSugarcane;
+        sugarcaneColl = incrementSugarcane(sugarcaneColl, sugarcaneCollHUD, "Sugarcane Collected: ");
     }
 
     public void incrementSugarcaneBurned()
     {
-        sugarcaneBurned++;
-        sugarcaneBurnedHUD.text = "Sugarcane Burned: " + sugarcaneBurned + "/" + numSugarcane;
+        sugarcaneBurned = incrementSugarcane(sugarcaneBurned, sugarcaneBurnedHUD, "Sugarcane Burned: ");
     }
 
     public bool isAllChopped()
     {
-        if (sugarcaneChopped == numSugarcane)
-        {
-            return true;
-        }
-        return false;
+        return isAllSugarcane(sugarcaneChopped);
     }
 
     public bool isAllCollected()
     {
-        if (sugarcaneColl == numSugarcane)
-        {
-            return true;
-        }
-        return false;
+        return isAllSugarcane(sugarcaneColl);
     }
 
     public bool isAllBurned()
     {
-        if (sugarcaneBurned == numSugarcane)
-        {
-            return true;
-        }
-        return false;
+        return isAllSugarcane(sugarcaneBurned);
     }
 }
