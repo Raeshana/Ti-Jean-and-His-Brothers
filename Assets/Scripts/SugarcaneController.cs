@@ -9,6 +9,8 @@ public class SugarcaneController : MonoBehaviour
     [SerializeField] GameObject collect;
     private SpriteRenderer _sr;
 
+    [SerializeField] SugarcaneManager sugarcaneManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +23,12 @@ public class SugarcaneController : MonoBehaviour
         {
             isChopped = true;
             _sr.color = Color.black; // chopped
+
             collect.SetActive(true);
             chop.SetActive(false);
+
+            // update sugarcane chopped HUD
+            sugarcaneManager.incrementSugarcaneChopped();
         }
     }
 

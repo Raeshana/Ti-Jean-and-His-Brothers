@@ -103,6 +103,7 @@ MonoBehaviour:
   isChopped: 0
   chop: {fileID: 6695199837026255028}
   collect: {fileID: 605968585290780508}
+  sugarcaneManager: {fileID: 0}
 --- !u!70 &5232411836928140852
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
