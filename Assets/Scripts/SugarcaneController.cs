@@ -37,6 +37,9 @@ public class SugarcaneController : MonoBehaviour
         if (isChopped)
         {
             Destroy(gameObject);
+
+            // update sugarcane collected HUD
+            sugarcaneManager.incrementSugarcaneColl();
         }
     }
 }
