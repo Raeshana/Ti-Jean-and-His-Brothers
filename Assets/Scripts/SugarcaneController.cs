@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class SugarcaneController : MonoBehaviour
 {
-    public bool isChopped; // flag for whether sugarcane is chopped or not
     [SerializeField] GameObject chop;
     [SerializeField] GameObject collect;
     private SpriteRenderer _sr;
 
     [SerializeField] SugarcaneManager sugarcaneManager;
+    [SerializeField] DevilController devilController;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class SugarcaneController : MonoBehaviour
 
     void Update()
     {
-        if (sugarcaneManager.isAllChopped()) // all sugarcane chopped
+        if (devilController.hasReported) // reported to the Devil after chopping all sugarcane
         {
             collect.SetActive(true);
         }
@@ -27,27 +27,20 @@ public class SugarcaneController : MonoBehaviour
 
     public void ChopSugarcane()
     {
-        if (!isChopped)
-        {
-            isChopped = true;
-            _sr.color = Color.black; // chopped
+        _sr.color = Color.black; // chopped
 
-            chop.SetActive(false);
+        chop.SetActive(false);
 
-            // update sugarcane chopped HUD
-            sugarcaneManager.incrementSugarcaneChopped();
-        }
+        // update sugarcane chopped HUD
+        sugarcaneManager.incrementSugarcaneChopped();
     }
 
     public void CollectSugarcane()
     {
-        if (isChopped)
-        {
-            Destroy(gameObject);
+        Destroy(gameObject);
 
-            // update sugarcane collected HUD
-            sugarcaneManager.incrementSugarcaneColl();
-        }
+        // update sugarcane collected HUD
+        sugarcaneManager.incrementSugarcaneColl();
     }
 
     public void BurnSugarcane()

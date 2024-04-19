@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51fc2aef893160f4e8eb887749d9b9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isChopped: 0
   chop: {fileID: 6695199837026255028}
   collect: {fileID: 605968585290780508}
   sugarcaneManager: {fileID: 0}
+  devilController: {fileID: 7803694025565520001, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
 --- !u!70 &5232411836928140852
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
