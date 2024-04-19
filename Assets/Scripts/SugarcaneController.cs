@@ -17,6 +17,14 @@ public class SugarcaneController : MonoBehaviour
         _sr = GetComponent<SpriteRenderer>();
     }
 
+    void Update()
+    {
+        if (sugarcaneManager.isAllChopped()) // all sugarcane chopped
+        {
+            collect.SetActive(true);
+        }
+    }
+
     public void ChopSugarcane()
     {
         if (!isChopped)
@@ -24,7 +32,6 @@ public class SugarcaneController : MonoBehaviour
             isChopped = true;
             _sr.color = Color.black; // chopped
 
-            collect.SetActive(true);
             chop.SetActive(false);
 
             // update sugarcane chopped HUD

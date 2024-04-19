@@ -32,4 +32,22 @@ public class SugarcaneManager : MonoBehaviour
         sugarcaneColl++;
         sugarcaneCollHUD.text = "Sugarcane Collected: " + sugarcaneColl + "/" + numSugarcane;
     }
+
+    public bool isAllChopped()
+    {
+        if (sugarcaneChopped == numSugarcane)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public bool isAllCollected()
+    {
+        if (sugarcaneColl == numSugarcane)
+        {
+            return true;
+        }
+        return false;
+    }
 }
