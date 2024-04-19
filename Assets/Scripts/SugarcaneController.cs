@@ -5,8 +5,8 @@ using UnityEngine;
 public class SugarcaneController : MonoBehaviour
 {
     public bool isChopped; // flag for whether sugarcane is chopped or not
-    [SerializeField] GameObject Chop;
-    [SerializeField] GameObject Collect;
+    [SerializeField] GameObject chop;
+    [SerializeField] GameObject collect;
     private SpriteRenderer _sr;
 
     // Start is called before the first frame update
@@ -21,7 +21,8 @@ public class SugarcaneController : MonoBehaviour
         {
             isChopped = true;
             _sr.color = Color.black; // chopped
-            Collect.SetActive(true);
+            collect.SetActive(true);
+            chop.SetActive(false);
         }
     }
 
@@ -30,7 +31,6 @@ public class SugarcaneController : MonoBehaviour
         if (isChopped)
         {
             Destroy(gameObject);
-            Chop.SetActive(true);
         }
     }
 }
