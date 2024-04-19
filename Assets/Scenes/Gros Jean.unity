@@ -617,10 +617,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4840fb6cc6269114cbd4a265265d6c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numSugarcane: 1
+  numSugarcane: 5
   sugarcaneChoppedHUD: {fileID: 314892220}
+  sugarcaneCollGO: {fileID: 952490870}
   sugarcaneCollHUD: {fileID: 120052346}
   sugarcaneBurnedHUD: {fileID: 0}
+  devilController: {fileID: 903977547695624560}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,12 +1002,12 @@ GameObject:
   - component: {fileID: 952490873}
   - component: {fileID: 952490872}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Sugarcane Collected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &952490871
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6838,7 +6840,7 @@ GameObject:
   - component: {fileID: 1628493524}
   - component: {fileID: 1628493523}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Sugarcane Chopped
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7208,6 +7210,10 @@ PrefabInstance:
       propertyPath: sugarcaneManager
       value: 
       objectReference: {fileID: 435746858}
+    - target: {fileID: 9039367130547662544, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7318,11 +7324,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.8
+      value: -10.8
       objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.8
+      value: -12.2
       objectReference: {fileID: 0}
     - target: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalPosition.z

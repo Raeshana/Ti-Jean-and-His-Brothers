@@ -10,11 +10,22 @@ public class SugarcaneManager : MonoBehaviour
     [SerializeField] TMP_Text sugarcaneChoppedHUD;
     private int sugarcaneChopped;
 
+    [SerializeField] GameObject sugarcaneCollGO;
     [SerializeField] TMP_Text sugarcaneCollHUD;
     private int sugarcaneColl;
 
     [SerializeField] TMP_Text sugarcaneBurnedHUD;
     private int sugarcaneBurned;
+
+    [SerializeField] DevilController devilController;
+
+    void Update()
+    {
+        if (devilController.hasReported) // reported to the Devil after chopping all sugarcane
+        {
+            sugarcaneCollGO.SetActive(true);
+        }
+    }
 
     private int incrementSugarcane(int sugarcane, TMP_Text sugarcaneHUD, string message)
     {
