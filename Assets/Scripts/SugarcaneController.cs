@@ -11,6 +11,8 @@ public class SugarcaneController : MonoBehaviour
     [SerializeField] SugarcaneManager sugarcaneManager;
     [SerializeField] DevilController devilController;
 
+    [SerializeField] DialogueController dialogueController;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class SugarcaneController : MonoBehaviour
     public void ChopSugarcane()
     {
         _sr.color = Color.black; // chopped
+        dialogueController.StartDialogue();
 
         chop.SetActive(false);
 
@@ -38,6 +41,7 @@ public class SugarcaneController : MonoBehaviour
     public void CollectSugarcane()
     {
         Destroy(gameObject);
+        dialogueController.StartDialogue();
 
         // update sugarcane collected HUD
         sugarcaneManager.incrementSugarcaneColl();
@@ -46,6 +50,7 @@ public class SugarcaneController : MonoBehaviour
     public void BurnSugarcane()
     {
         Destroy(gameObject);
+        dialogueController.StartDialogue();
 
         // update sugarcane burned HUD
         sugarcaneManager.incrementSugarcaneBurned();

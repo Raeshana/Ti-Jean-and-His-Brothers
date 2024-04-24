@@ -46,8 +46,8 @@ public class DialogueController : MonoBehaviour
     [Tooltip("Speed of typing effect.")]
     [SerializeField] float textSpeed;
     private int index; // Line of dialogue
-
-    [SerializeField] KeyCode interactKey;
+    [SerializeField] KeyCode interactKey; // Key to interact with
+    public bool endOfDialogue = false; // If true, dialogue has ended
 
     void Update()
     {
@@ -72,6 +72,7 @@ public class DialogueController : MonoBehaviour
         dialogue = GetComponentInChildren<TMP_Text>();
         dialogue.text = string.Empty;
         index = 0;
+        endOfDialogue = false;
 
         ChangeHeader(); // Change speaker header: portrait and title
 
@@ -107,7 +108,7 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    private void NextLine()
+    public void NextLine()
     {
         if (index < textAndSpeakers.Length - 1)
         {
@@ -119,6 +120,7 @@ public class DialogueController : MonoBehaviour
             StartCoroutine(TypeText());
         }
         else {
+            endOfDialogue = true;
             gameObject.SetActive(false);
         }
     }

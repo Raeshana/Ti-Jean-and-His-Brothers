@@ -46,6 +46,12 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("LoseScreen", LoadSceneMode.Additive);
     }
 
+    [ContextMenu("Go to Gros Jean's transition screen")]
+    public void GoToGrosJeanWin()
+    {
+        SceneManager.LoadScene("GrosJeanWin", LoadSceneMode.Single);
+    }
+
     [ContextMenu("Go to how to play")]
     public void GoToHowToPlay()
     {

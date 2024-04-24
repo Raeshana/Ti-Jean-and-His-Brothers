@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class DialogueUnprompted : MonoBehaviour
 {
-    [SerializeField] DialogueController dialogueController;
+    [SerializeField] DialogueController prev;
+    [SerializeField] DialogueController next;
 
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-        dialogueController.StartDialogue();
+        if (prev.endOfDialogue)
+        {
+            next.StartDialogue();
+            prev.endOfDialogue = false;
+        }
     }
 }
