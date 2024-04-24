@@ -11,27 +11,6 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    [ContextMenu("Go to how to play")]
-    public void GoToHowToPlay()
-    {
-        if (SceneManager.loadedSceneCount <= 1f) // checks if menu is already loaded
-        {
-            Time.timeScale = 0f;
-            SceneManager.LoadScene("HowToPlay", LoadSceneMode.Additive);
-        }
-        else
-        {
-            UnloadHowToPlay();
-        }
-    }
-
-    [ContextMenu("Unload How to play")]
-    public void UnloadHowToPlay()
-    {
-        Time.timeScale = 1f;
-        SceneManager.UnloadSceneAsync("HowToPlay");
-    }
-
     [ContextMenu("Go to next level")]
     public void GoToNextLevel()
     {
@@ -43,7 +22,7 @@ public class SceneController : MonoBehaviour
         int current = SceneManager.GetActiveScene().buildIndex;
         int next = current + 1;
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
 
         SceneManager.LoadScene(next, LoadSceneMode.Single);
     }
@@ -61,6 +40,27 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
+    [ContextMenu("Go to how to play")]
+    public void GoToHowToPlay()
+    {
+        if (SceneManager.loadedSceneCount <= 1f) // checks if menu is already loaded
+        {
+            Time.timeScale = 0f;
+            SceneManager.LoadScene("HowToPlay", LoadSceneMode.Additive);
+        }
+        else if (SceneManager.GetSceneByName("HowToPlay").isLoaded) // menu loaded is HowToPlay
+        {
+            UnloadHowToPlay();
+        }
+    }
+
+    [ContextMenu("Unload How to play")]
+    public void UnloadHowToPlay()
+    {
+        Time.timeScale = 1f;
+        SceneManager.UnloadSceneAsync("HowToPlay");
+    }
+
     [ContextMenu("Pause")]
     public void GoToPauseMenu()
     {
@@ -73,7 +73,7 @@ public class SceneController : MonoBehaviour
             Time.timeScale = 0f;
             SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
             }
-            else
+            else if (SceneManager.GetSceneByName("PauseMenu").isLoaded) // menu loaded is PauseMenu
             {
                 UnloadPauseMenu();
             }
@@ -90,17 +90,19 @@ public class SceneController : MonoBehaviour
     [ContextMenu("Go to Credits Screen")]
     public void GoToCreditsScreen()
     {
+        int current = SceneManager.GetActiveScene().buildIndex;
+
         if (SceneManager.loadedSceneCount <= 1f) // checks if menu is already loaded
         {
             SceneManager.LoadScene("CreditsScreen", LoadSceneMode.Additive);
         }
-        else
+        else if (SceneManager.GetSceneByName("CreditsScreen").isLoaded) // menu loaded is CreditsScreen
         {
-            UnloadPauseMenu();
+            UnloadCreditsScreen();
         }
     }
 
-    [ContextMenu("Credits Screen")]
+    [ContextMenu("Unload Credits Screen")]
     public void UnloadCreditsScreen()
     {
         SceneManager.UnloadSceneAsync("CreditsScreen");
