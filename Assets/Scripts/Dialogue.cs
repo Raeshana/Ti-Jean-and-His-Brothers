@@ -10,27 +10,36 @@ public class Dialogue : MonoBehaviour
     public enum Speaker
     {
         DEVIL = 0,
-        GROSJEAN = 1,
-        TIJEAN = 2
+        PLAYER = 1
     };
 
     [System.Serializable]
-    public struct TextandSpeaker
+    public struct TextAndSpeaker
     {
         public string text;
         public Speaker speaker;
     };
 
+    [System.Serializable]
+    public struct SpeakerHeader
+    {
+        public Sprite portrait;
+        public string title;
+    };
+
     // Array of text and their corresponding speakers
-    [SerializeField] TextandSpeaker[] textandSpeakers;
+    [Tooltip("Dialogue and corresponding speakers. Must have at least one.")]
+    [SerializeField] TextAndSpeaker[] textAndSpeakers;
 
     // Portraits for each speaker
-    [Tooltip("0. Devil 1. Gros Jean 2. Ti Jean")]
-    [SerializeField] Sprite[] portraits;
     [SerializeField] GameObject dialoguePortrait;
 
     // Title for each speaker
     [SerializeField] TMP_Text title;
+
+    // Speaker headers
+    [Tooltip("0. Devil 1. Player")]
+    [SerializeField] SpeakerHeader[] speakerHeaders;
 
     // Dialogue variables
     private TMP_Text dialogue; // Dialogue box text
@@ -46,13 +55,13 @@ public class Dialogue : MonoBehaviour
         {
             Debug.Log(index);
 
-            if (dialogue.text == textandSpeakers[index].text)
+            if (dialogue.text == textAndSpeakers[index].text)
             {
                 NextLine();
             }
             else {
                 StopAllCoroutines();
-                dialogue.text = textandSpeakers[index].text;
+                dialogue.text = textAndSpeakers[index].text;
             }
         }
     }
@@ -74,19 +83,15 @@ public class Dialogue : MonoBehaviour
     // Change portrait and title depending on speaker
     public void ChangeHeader()
     {
-        switch(textandSpeakers[index].speaker)
+        switch(textAndSpeakers[index].speaker)
         {
             case Speaker.DEVIL:
-                dialoguePortrait.GetComponent<Image>().sprite = portraits[0];
-                title.text = "Devil";
+                dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[0].portrait;
+                title.text = speakerHeaders[0].title;
                 break;
-            case Speaker.GROSJEAN:
-                dialoguePortrait.GetComponent<Image>().sprite = portraits[1];
-                title.text = "Gros Jean";
-                break;
-            case Speaker.TIJEAN:
-                dialoguePortrait.GetComponent<Image>().sprite = portraits[2];
-                title.text = "Ti Jean";
+            case Speaker.PLAYER:
+                dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[1].portrait;
+                title.text = speakerHeaders[1].title;
                 break;
             default:
                 break;
@@ -96,7 +101,7 @@ public class Dialogue : MonoBehaviour
     private IEnumerator TypeText()
     {
         // Type each character individually
-        string text = textandSpeakers[index].text;
+        string text = textAndSpeakers[index].text;
         foreach(char c in text.ToCharArray())
         {
             dialogue.text += c;
@@ -106,7 +111,7 @@ public class Dialogue : MonoBehaviour
 
     private void NextLine()
     {
-        if (index < textandSpeakers.Length - 1)
+        if (index < textAndSpeakers.Length - 1)
         {
             index++;
             dialogue.text = string.Empty;
