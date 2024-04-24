@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
     [ContextMenu("Restart current level")]
     public void RestartLevel()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
