@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24220b573ab89f044bb2dabe8e548201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remainingTime: 420
+  remainingTime: 600
   devilController: {fileID: 903977547695624560}
   sceneController: {fileID: 662148548}
   dialogueController: {fileID: 0}
