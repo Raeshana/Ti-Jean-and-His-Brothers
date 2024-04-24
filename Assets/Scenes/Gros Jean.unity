@@ -191,6 +191,98 @@ PrefabInstance:
       propertyPath: text.Array.data[9]
       value: Go and collect de sugarcane fi me.
       objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[0].text
+      value: All de sugarcane done chop down boss!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[1].text
+      value: Eh? Yuh done?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[2].text
+      value: Well, where it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[3].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[4].text
+      value: What you mean where it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[5].text
+      value: It dey in de field where it chop.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[6].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[7].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[8].text
+      value: Eh?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[9].text
+      value: I din tell you to collect it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[10].text
+      value: You never say that boss!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[11].text
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[12].text
+      value: Well, I must be forget, oui!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[13].text
+      value: Go an collect de sugarcane and bring it here fi me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[0].speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[3].speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[4].speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[5].speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[6].speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[7].speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[8].speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[10].speaker
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7397,6 +7489,22 @@ PrefabInstance:
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: text.Array.data[1]
       value: And when yuh done, bring it here fi me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[0].text
+      value: Go and chop down all dem sugarcane in de field boy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[1].text
+      value: And when yuh done...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textandSpeakers.Array.data[2].text
+      value: Bring it here fi me.
       objectReference: {fileID: 0}
     - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_Pivot.x
