@@ -91,7 +91,7 @@ public class SceneController : MonoBehaviour
     {
         int current = SceneManager.GetActiveScene().buildIndex;
 
-        if (current == 2 || current == 3) // game only pauses in levels
+        if (current == 1 || current == 3) // game only pauses in levels
         {
             if (SceneManager.loadedSceneCount <= 1f) // checks if menu is already loaded
         {

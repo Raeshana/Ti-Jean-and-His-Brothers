@@ -50,11 +50,11 @@ public class DevilController : MonoBehaviour
     public void Report()
     {
         hasReported = true;
-        reportDialogue.StartDialogue();
+        Debug.Log("Oh? You chop all de sugarcane? Well where it? Huh? I din tell you to collect it? Well I probably forget oui! You not vex right? Go and collect de sugarcane fi me.");
     }
 
     public void GiveSugarcane()
     {
-        giveDialogue.StartDialogue();
+        Debug.Log("Sugarcane given. Dialogue prompt.");
     }
 }
