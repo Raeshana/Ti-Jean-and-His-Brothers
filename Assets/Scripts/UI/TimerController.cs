@@ -9,6 +9,7 @@ public class TimerController : MonoBehaviour
     public float remainingTime;
     [SerializeField] DevilController devilController;
     [SerializeField] SceneController sceneController;
+    [SerializeField] DialogueController dialogueController;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +27,9 @@ public class TimerController : MonoBehaviour
             {
                 remainingTime -= Time.deltaTime;
             }
-            else if (remainingTime < 0){
+            else if (remainingTime < 0){ // Player lost
                 remainingTime = 0;
-                sceneController.GoToLoseScreen(); // Player lost
+                sceneController.GoToLoseScreen(); // Load lose screen
             }
             
             int minutes = Mathf.FloorToInt(remainingTime / 60);

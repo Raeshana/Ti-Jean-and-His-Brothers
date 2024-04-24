@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueUnprompted : MonoBehaviour
+public class DialogueTransition : MonoBehaviour
 {
     [SerializeField] DialogueController prev;
     [SerializeField] DialogueController next;
