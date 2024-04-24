@@ -89,14 +89,19 @@ public class SceneController : MonoBehaviour
     [ContextMenu("Pause")]
     public void GoToPauseMenu()
     {
-        if (SceneManager.loadedSceneCount <= 1f) // checks if pause menu is already loaded
+        int current = SceneManager.GetActiveScene().buildIndex;
+
+        if (current == 2 || current == 3) // game only pauses in levels
+        {
+            if (SceneManager.loadedSceneCount <= 1f) // checks if pause menu is already loaded
         {
             Time.timeScale = 0f;
             SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
-        }
-        else
-        {
-            UnloadPauseMenu();
+            }
+            else
+            {
+                UnloadPauseMenu();
+            }
         }
     }
 
