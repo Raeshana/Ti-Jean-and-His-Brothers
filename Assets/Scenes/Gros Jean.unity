@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &116112471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+  m_PrefabInstance: {fileID: 4280335966718193582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &116112472 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
@@ -610,6 +615,16 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
   m_PrefabInstance: {fileID: 729417995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &764376839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7898733606287762855, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+  m_PrefabInstance: {fileID: 903977547695624556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &991716843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8332490068356147696, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+  m_PrefabInstance: {fileID: 903977547695624556}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1378690547 stripped
 Transform:
@@ -6392,6 +6407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sugarcane Collected
       objectReference: {fileID: 0}
+    - target: {fileID: 6871542914572651493, guid: a480b31bf28e4754b8d0846e30db4fd1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7004550500705158319, guid: a480b31bf28e4754b8d0846e30db4fd1, type: 3}
       propertyPath: m_Name
       value: Sugarcane Collected
@@ -6603,6 +6622,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1779859777 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3405485232826609844, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+  m_PrefabInstance: {fileID: 903977547695624556}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &744360991645727588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6768,6 +6792,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Devil
       objectReference: {fileID: 0}
+    - target: {fileID: 6943825764713539158, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+      propertyPath: m_Name
+      value: Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 7803694025565520001, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+      propertyPath: giveIntr
+      value: 
+      objectReference: {fileID: 1779859777}
+    - target: {fileID: 7803694025565520001, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+      propertyPath: talkIntr
+      value: 
+      objectReference: {fileID: 991716843}
+    - target: {fileID: 7803694025565520001, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+      propertyPath: reportIntr
+      value: 
+      objectReference: {fileID: 764376839}
+    - target: {fileID: 7803694025565520001, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
+      propertyPath: talkDialogue
+      value: 
+      objectReference: {fileID: 116112471}
     - target: {fileID: 7803694025565520001, guid: 7fe3dc3ed2c57a74d96079dbffa8be11, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -6871,7 +6915,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_Name
-      value: Devil
+      value: TalkDevil
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: text.Array.data[0]
+      value: Go and chop down all dem sugarcane in de field boy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: text.Array.data[1]
+      value: And when yuh done, bring it here fi me.
       objectReference: {fileID: 0}
     - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_Pivot.x
@@ -6923,15 +6983,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_AnchoredPosition.x

@@ -5,9 +5,16 @@ using UnityEngine;
 public class DevilController : MonoBehaviour
 {
     [SerializeField] SugarcaneManager sugarcaneManager;
-    [SerializeField] GameObject talk;
-    [SerializeField] GameObject report;
-    [SerializeField] GameObject give;
+
+    // Interactables
+    [SerializeField] GameObject talkIntr;
+    [SerializeField] GameObject reportIntr;
+    [SerializeField] GameObject giveIntr;
+
+    // Dialogue Boxes
+    [SerializeField] GameObject talkDialogue;
+    [SerializeField] GameObject reportDialogue;
+    [SerializeField] GameObject giveDialogue;
 
     public bool hasReported;
 
@@ -22,20 +29,20 @@ public class DevilController : MonoBehaviour
     {
         if (sugarcaneManager.isAllChopped())
         {
-            talk.SetActive(false);
-            report.SetActive(true);
+            talkIntr.SetActive(false);
+            reportIntr.SetActive(true);
         }
 
         if (sugarcaneManager.isAllCollected())
         {
-            report.SetActive(false);
-            give.SetActive(true);
+            reportIntr.SetActive(false);
+            giveIntr.SetActive(true);
         }
     }
 
     public void Talk()
     {
-        Debug.Log("Go and chop down all dem sugarcane in de field boy. And when yuh done, bring it here fi me.");
+        talkDialogue.SetActive(true);
     }
 
     public void Report()
