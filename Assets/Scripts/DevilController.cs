@@ -12,9 +12,9 @@ public class DevilController : MonoBehaviour
     [SerializeField] GameObject giveIntr;
 
     // Dialogue Boxes
-    [SerializeField] Dialogue talkDialogue;
-    [SerializeField] Dialogue reportDialogue;
-    [SerializeField] Dialogue giveDialogue;
+    [SerializeField] DialogueController talkDialogue;
+    [SerializeField] DialogueController reportDialogue;
+    [SerializeField] DialogueController giveDialogue;
 
     public bool hasTalked;
     public bool hasReported;

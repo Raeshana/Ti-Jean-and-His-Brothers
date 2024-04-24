@@ -897,6 +897,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
   m_PrefabInstance: {fileID: 589881944}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &662148548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2201526284543239075, guid: 2922df544ae283c4894120adf97ccc07, type: 3}
+  m_PrefabInstance: {fileID: 1688552654}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93aa80d17a4010242a4fdeb0877c2c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &717990293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,7 +1055,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24220b573ab89f044bb2dabe8e548201, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remainingTime: 10
+  remainingTime: 2
+  devilController: {fileID: 903977547695624560}
+  sceneController: {fileID: 662148548}
 --- !u!1001 &729417995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8108,10 +8121,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 1688552654}
   - {fileID: 1258680627048051285}
   - {fileID: 290034320}
   - {fileID: 435746857}
   - {fileID: 903977547695624556}
   - {fileID: 1577593960}
   - {fileID: 1663884573}
-  - {fileID: 1688552654}

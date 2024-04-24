@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TiJeanWin.unity
     guid: 853c5d03e709b004bab4e32b10e8fffe
   - enabled: 1
+    path: Assets/Scenes/Menus/LoseScreen.unity
+    guid: 5e3d16b20992bd74680dc8c75062cf7c
+  - enabled: 1
     path: Assets/Scenes/Menus/HowToPlay.unity
     guid: 23ba3c3fd4a344d4890739f874880319
   - enabled: 1

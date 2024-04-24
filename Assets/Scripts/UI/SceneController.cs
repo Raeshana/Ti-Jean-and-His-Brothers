@@ -40,6 +40,12 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
+    [ContextMenu("Go to lose screen")]
+    public void GoToLoseScreen()
+    {
+        SceneManager.LoadScene("LoseScreen", LoadSceneMode.Additive);
+    }
+
     [ContextMenu("Go to how to play")]
     public void GoToHowToPlay()
     {

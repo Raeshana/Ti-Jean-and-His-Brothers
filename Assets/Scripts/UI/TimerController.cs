@@ -6,8 +6,9 @@ using TMPro;
 public class TimerController : MonoBehaviour
 {
     private TMP_Text timer;
-    [SerializeField] float remainingTime;
+    public float remainingTime;
     [SerializeField] DevilController devilController;
+    [SerializeField] SceneController sceneController;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class TimerController : MonoBehaviour
             }
             else if (remainingTime < 0){
                 remainingTime = 0;
+                sceneController.GoToLoseScreen(); // Player lost
             }
             
             int minutes = Mathf.FloorToInt(remainingTime / 60);

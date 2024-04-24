@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Dialogue : MonoBehaviour
+public class DialogueController : MonoBehaviour
 {
     [System.Serializable]
     public enum Speaker
@@ -53,8 +53,6 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(interactKey))
         {
-            Debug.Log(index);
-
             if (dialogue.text == textAndSpeakers[index].text)
             {
                 NextLine();
