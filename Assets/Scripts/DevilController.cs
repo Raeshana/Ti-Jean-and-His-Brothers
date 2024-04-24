@@ -12,10 +12,11 @@ public class DevilController : MonoBehaviour
     [SerializeField] GameObject giveIntr;
 
     // Dialogue Boxes
-    [SerializeField] GameObject talkDialogue;
-    [SerializeField] GameObject reportDialogue;
-    [SerializeField] GameObject giveDialogue;
+    [SerializeField] Dialogue talkDialogue;
+    [SerializeField] Dialogue reportDialogue;
+    [SerializeField] Dialogue giveDialogue;
 
+    public bool hasTalked;
     public bool hasReported;
 
     // Start is called before the first frame update
@@ -42,7 +43,8 @@ public class DevilController : MonoBehaviour
 
     public void Talk()
     {
-        talkDialogue.SetActive(true);
+        hasTalked = true;
+        talkDialogue.StartDialogue();
     }
 
     public void Report()

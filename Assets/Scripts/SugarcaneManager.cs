@@ -6,30 +6,36 @@ using TMPro;
 public class SugarcaneManager : MonoBehaviour
 {
     [SerializeField] int numSugarcane;
+    private TMP_Text sugarcaneHUD;
 
-    [SerializeField] TMP_Text sugarcaneChoppedHUD;
+    [SerializeField] GameObject sugarcaneChoppedGO;
     private int sugarcaneChopped;
 
     [SerializeField] GameObject sugarcaneCollGO;
-    [SerializeField] TMP_Text sugarcaneCollHUD;
     private int sugarcaneColl;
 
-    [SerializeField] TMP_Text sugarcaneBurnedHUD;
+    [SerializeField] GameObject sugarcaneBurnedGO;
     private int sugarcaneBurned;
 
     [SerializeField] DevilController devilController;
 
     void Update()
     {
+        if (devilController.hasTalked) // reported to the Devil after chopping all sugarcane
+        {
+            sugarcaneChoppedGO.SetActive(true);
+        }
+
         if (devilController.hasReported) // reported to the Devil after chopping all sugarcane
         {
             sugarcaneCollGO.SetActive(true);
         }
     }
 
-    private int incrementSugarcane(int sugarcane, TMP_Text sugarcaneHUD, string message)
+    private int incrementSugarcane(GameObject sugarcaneGO, int sugarcane, string message)
     {
         sugarcane++;
+        sugarcaneHUD = sugarcaneGO.GetComponentInChildren<TMP_Text>();
         sugarcaneHUD.text = message + sugarcane + "/" + numSugarcane;
         return sugarcane;
     }
@@ -45,17 +51,17 @@ public class SugarcaneManager : MonoBehaviour
 
     public void incrementSugarcaneChopped()
     {
-        sugarcaneChopped = incrementSugarcane(sugarcaneChopped, sugarcaneChoppedHUD, "Sugarcane Chopped: ");
+        sugarcaneChopped = incrementSugarcane(sugarcaneChoppedGO, sugarcaneChopped, "Sugarcane Chopped: ");
     }
 
     public void incrementSugarcaneColl()
     {
-        sugarcaneColl = incrementSugarcane(sugarcaneColl, sugarcaneCollHUD, "Sugarcane Collected: ");
+        sugarcaneColl = incrementSugarcane(sugarcaneCollGO, sugarcaneColl, "Sugarcane Collected: ");
     }
 
     public void incrementSugarcaneBurned()
     {
-        sugarcaneBurned = incrementSugarcane(sugarcaneBurned, sugarcaneBurnedHUD, "Sugarcane Burned: ");
+        sugarcaneBurned = incrementSugarcane(sugarcaneBurnedGO, sugarcaneBurned, "Sugarcane Burned: ");
     }
 
     public bool isAllChopped()

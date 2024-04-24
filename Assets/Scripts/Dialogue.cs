@@ -10,18 +10,12 @@ public class Dialogue : MonoBehaviour
     [SerializeField] string[] text;
     [SerializeField] float textSpeed;
     private int index;
- 
-    // Start is called before the first frame update
-    void Start()
-    {
-        dialogue = GetComponentInChildren<TMP_Text>();
-        dialogue.text = string.Empty;
-        StartDialogue();
-    }
+
+    [SerializeField] KeyCode interactKey;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(interactKey))
         {
             if (dialogue.text == text[index])
             {
@@ -34,13 +28,18 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    public void StartDialogue()
     {
+        gameObject.SetActive(true);
+
+        dialogue = GetComponentInChildren<TMP_Text>();
+        dialogue.text = string.Empty;
+
         index = 0;
         StartCoroutine(TypeText());
     }
 
-    IEnumerator TypeText()
+    private IEnumerator TypeText()
     {
         // Type each character individually
         foreach(char c in text[index].ToCharArray())
@@ -50,7 +49,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void NextLine()
+    private void NextLine()
     {
         if (index < text.Length - 1)
         {
