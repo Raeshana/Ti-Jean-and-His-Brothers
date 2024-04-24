@@ -21,11 +21,6 @@ public class SugarcaneManager : MonoBehaviour
 
     void Update()
     {
-        if (devilController.hasTalked) // reported to the Devil after chopping all sugarcane
-        {
-            sugarcaneChoppedGO.SetActive(true);
-        }
-
         if (devilController.hasReported) // reported to the Devil after chopping all sugarcane
         {
             sugarcaneCollGO.SetActive(true);
