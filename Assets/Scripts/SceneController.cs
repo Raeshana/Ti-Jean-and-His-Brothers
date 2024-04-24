@@ -5,31 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    // Update is called once per frame
-    void Update()
-    {
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            RestartLevel();
-        }
-
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            GoToHowToPlay();
-        }   
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            GoToPauseMenu();
-        }
-        
-        if (Input.GetButtonDown("Cancel"))
-        {
-            QuitGame();
-        }       
-    }
-
     [ContextMenu("Restart current level")]
     public void RestartLevel()
     {
