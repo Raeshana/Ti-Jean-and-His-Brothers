@@ -39,7 +39,7 @@ public class SceneController : MonoBehaviour
     [ContextMenu("Go to how to play")]
     public void GoToHowToPlay()
     {
-        if (SceneManager.loadedSceneCount <= 1f)
+        if (SceneManager.loadedSceneCount <= 1f) // checks if menu is already loaded
         {
             Time.timeScale = 0f;
             SceneManager.LoadScene("HowToPlay", LoadSceneMode.Additive);
@@ -93,7 +93,7 @@ public class SceneController : MonoBehaviour
 
         if (current == 2 || current == 3) // game only pauses in levels
         {
-            if (SceneManager.loadedSceneCount <= 1f) // checks if pause menu is already loaded
+            if (SceneManager.loadedSceneCount <= 1f) // checks if menu is already loaded
         {
             Time.timeScale = 0f;
             SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
@@ -112,9 +112,22 @@ public class SceneController : MonoBehaviour
         SceneManager.UnloadSceneAsync("PauseMenu");
     }
 
-    [ContextMenu("Go to credits screen")]
+    [ContextMenu("Go to Credits Screen")]
     public void GoToCreditsScreen()
     {
-        SceneManager.LoadScene("CreditsScreen", LoadSceneMode.Single);
+        if (SceneManager.loadedSceneCount <= 1f) // checks if menu is already loaded
+        {
+            SceneManager.LoadScene("CreditsScreen", LoadSceneMode.Additive);
+        }
+        else
+        {
+            UnloadPauseMenu();
+        }
+    }
+
+    [ContextMenu("Credits Screen")]
+    public void UnloadCreditsScreen()
+    {
+        SceneManager.UnloadSceneAsync("CreditsScreen");
     }
 }
