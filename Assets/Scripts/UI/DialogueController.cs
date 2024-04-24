@@ -47,8 +47,13 @@ public class DialogueController : MonoBehaviour
     [SerializeField] float textSpeed;
     private int index; // Line of dialogue
     [SerializeField] KeyCode interactKey; // Key to interact with
-    public bool endOfDialogue = false; // If true, dialogue has ended
+    public bool endOfDialogue; // If true, dialogue has ended
 
+    void Start()
+    {
+        endOfDialogue = false;
+    }
+    
     void Update()
     {
         if (Input.GetKeyDown(interactKey))
@@ -108,6 +113,12 @@ public class DialogueController : MonoBehaviour
         }
     }
 
+    public void EndDialogue()
+    {
+        endOfDialogue = true;
+        gameObject.SetActive(false);
+    }
+
     public void NextLine()
     {
         if (index < textAndSpeakers.Length - 1)
@@ -120,8 +131,7 @@ public class DialogueController : MonoBehaviour
             StartCoroutine(TypeText());
         }
         else {
-            endOfDialogue = true;
-            gameObject.SetActive(false);
+            EndDialogue();
         }
     }
 }
