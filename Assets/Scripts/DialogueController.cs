@@ -72,6 +72,7 @@ public class DialogueController : MonoBehaviour
         dialogue = GetComponentInChildren<TMP_Text>();
         dialogue.text = string.Empty;
         index = 0;
+        endOfDialogue = false;
 
         ChangeHeader(); // Change speaker header: portrait and title
 

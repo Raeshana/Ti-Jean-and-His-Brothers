@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 516133540907752460}
   - component: {fileID: 6907190726784712470}
   m_Layer: 5
-  m_Name: DialogueBox
+  m_Name: Dialogue Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -521,7 +521,6 @@ MonoBehaviour:
     title: 
   textSpeed: 0.03
   interactKey: 32
-  endOfDialogue: 0
 --- !u!1 &8637825422986114692
 GameObject:
   m_ObjectHideFlags: 0
