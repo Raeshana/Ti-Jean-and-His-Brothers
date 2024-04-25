@@ -150,7 +150,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -228,7 +228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7194979401206245364
 RectTransform:
   m_ObjectHideFlags: 0
@@ -309,10 +309,10 @@ MonoBehaviour:
   dialoguePortrait: {fileID: 3530422439270723387}
   title: {fileID: 5003159265887375196}
   speakerHeaders:
-  - portrait: {fileID: 21300000, guid: cd7ae800e450e344a94a96c35727aad9, type: 3}
-    title: Devil
+  - portrait: {fileID: -1418832059, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
+    title: DEVIL
   - portrait: {fileID: 1986226018, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
-    title: Gros Jean
+    title: GROS JEAN
   textSpeed: 0.03
   interactKey: 32
   endOfDialogue: 0
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -498,8 +498,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 165, y: 80}
-  m_SizeDelta: {x: 330, y: 100}
+  m_AnchoredPosition: {x: 250, y: 80}
+  m_SizeDelta: {x: 400, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2542452882638174794
 CanvasRenderer:
