@@ -48,7 +48,6 @@ public class DialogueController : MonoBehaviour
     private int index; // Line of dialogue
     [SerializeField] KeyCode interactKey; // Key to interact with
     public bool endOfDialogue; // If true, dialogue has ended
-    [SerializeField] bool angryPrompt; // True if dialogue is an angry prompt
 
     void Start()
     {
@@ -132,7 +131,7 @@ public class DialogueController : MonoBehaviour
 
             StartCoroutine(TypeText());
         }
-        else if (!angryPrompt) {
+        else if (gameObject.tag == "Dialogue") { // Diables dialogue box if not angry prompt
             EndDialogue();
         }
     }

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sugarcane_uncut
+  - AngryPrompt
+  - Dialogue
   layers:
   - Default
   - TransparentFX
