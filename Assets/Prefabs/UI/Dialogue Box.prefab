@@ -521,6 +521,7 @@ MonoBehaviour:
     title: 
   textSpeed: 0.03
   interactKey: 32
+  endOfDialogue: 0
 --- !u!1 &8637825422986114692
 GameObject:
   m_ObjectHideFlags: 0
