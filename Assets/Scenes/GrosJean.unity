@@ -33649,10 +33649,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2651270475236991961}
     m_Modifications:
-    - target: {fileID: 5003159265887375196, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5589042523693656577, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
       propertyPath: m_Name
       value: AngryPrompt
