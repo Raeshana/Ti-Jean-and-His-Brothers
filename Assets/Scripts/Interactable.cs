@@ -12,6 +12,7 @@ public class Interactable : MonoBehaviour
 
     private TMP_Text _instruction;
     [SerializeField] string instructionMsg;
+    [SerializeField] GameObject instructionPanel;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class Interactable : MonoBehaviour
         if (isInRange) // in range to interact
         {
             _instruction.text = instructionMsg; // makes instructions visible
+            instructionPanel.SetActive(true); // makes instruction panel visible
 
             if (Input.GetKeyDown(interactKey)) // player presses key
             {
@@ -31,7 +33,8 @@ public class Interactable : MonoBehaviour
             }
         }
         else{
-            _instruction.text = ""; // makes instructions visible
+            _instruction.text = ""; // makes instructions invisible
+            instructionPanel.SetActive(false); // makes instruction panel invisible
         }
     }
 
