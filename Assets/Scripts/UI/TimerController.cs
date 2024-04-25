@@ -9,7 +9,6 @@ public class TimerController : MonoBehaviour
     public float remainingTime;
     [SerializeField] DevilController devilController;
     [SerializeField] SceneController sceneController;
-    [SerializeField] DialogueController dialogueController;
 
     // Start is called before the first frame update
     void Start()

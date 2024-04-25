@@ -57,14 +57,15 @@ public class DialogueController : MonoBehaviour
     
     void Update()
     {
+        // Checks if button for the next dialogue to be played is pressed
         if (Input.GetKeyDown(interactKey))
         {
-            if (dialogue.text == textAndSpeakers[index].text)
+            if (dialogue.text == textAndSpeakers[index].text) // Text finished being displayed
             {
                 NextLine();
             }
             else {
-                StopAllCoroutines();
+                StopAllCoroutines(); // Fast forward text display (no typing effect)
                 dialogue.text = textAndSpeakers[index].text;
             }
         }
