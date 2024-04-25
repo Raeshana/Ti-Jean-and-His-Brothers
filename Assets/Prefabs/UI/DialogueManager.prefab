@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2561769180890950005}
   - component: {fileID: 5753162841103604074}
+  - component: {fileID: 4328585304046166061}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -46,3 +47,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prev: {fileID: 0}
   next: {fileID: 0}
+--- !u!114 &4328585304046166061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5221947400424846435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e4b0b029cd45e6478a71c292639a896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueControllers: []
+  dialogueOngoing: 0
