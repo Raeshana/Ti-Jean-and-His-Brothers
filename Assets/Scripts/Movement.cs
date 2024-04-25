@@ -29,10 +29,10 @@ public class Movement : MonoBehaviour
         // Freeze movement if dialogue is ongoing
         if (dialogue.dialogueOngoing)
         {
-             _rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+            _rb.constraints = RigidbodyConstraints2D.FreezePosition;
         }
         else { // Unfreeze movement otherwise
-             _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            _rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
 
         // Get keybaord inputs
