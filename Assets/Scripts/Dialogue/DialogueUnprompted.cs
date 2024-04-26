@@ -9,6 +9,6 @@ public class DialogueUnprompted : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogueController.StartDialogue(); // Start time dialogue
+        dialogueController.StartDialogue(); // Start dialogue
     }
 }

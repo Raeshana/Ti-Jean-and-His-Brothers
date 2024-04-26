@@ -9,8 +9,9 @@ public class DialogueController : MonoBehaviour
     [System.Serializable]
     public enum Speaker
     {
-        DEVIL = 0,
-        PLAYER = 1
+        PLANTER = 0,
+        PLAYER = 1,
+        DEVIL
     };
 
     [System.Serializable]
@@ -87,17 +88,21 @@ public class DialogueController : MonoBehaviour
     // Play typing audio when character changes
     private void ChangeHeader()
     {
+        audioManager.PlaySFX(audioManager.typing); // Play typing audio
+
         switch(textAndSpeakers[index].speaker)
         {
-            case Speaker.DEVIL:
+            case Speaker.PLANTER:
                 dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[0].portrait;
                 title.text = speakerHeaders[0].title;
-                audioManager.PlaySFX(audioManager.typing); // Play typing audio
                 break;
             case Speaker.PLAYER:
                 dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[1].portrait;
                 title.text = speakerHeaders[1].title;
-                audioManager.PlaySFX(audioManager.typing); // Play typing audio
+                break;
+            case Speaker.DEVIL:
+                dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[2].portrait;
+                title.text = speakerHeaders[2].title;
                 break;
             default:
                 break;
