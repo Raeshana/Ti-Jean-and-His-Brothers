@@ -47,11 +47,11 @@ public class DialogueController : MonoBehaviour
     [SerializeField] float textSpeed;
     private int index; // Line of dialogue
     [SerializeField] KeyCode interactKey; // Key to interact with
-    //public bool endOfDialogue; // If true, dialogue has ended
+    public bool endOfDialogue; // If true, dialogue has ended
 
     void Start()
     {
-        //endOfDialogue = false;
+        endOfDialogue = false;
     }
     
     void Update()
@@ -78,7 +78,7 @@ public class DialogueController : MonoBehaviour
         dialogue = GetComponentInChildren<TMP_Text>();
         dialogue.text = string.Empty;
         index = 0;
-        //endOfDialogue = false;
+        endOfDialogue = false;
 
         ChangeHeader(); // Change speaker header: portrait and title
 
@@ -116,8 +116,18 @@ public class DialogueController : MonoBehaviour
 
     public void EndDialogue()
     {
-        //endOfDialogue = true;
+        endOfDialogue = true;
         gameObject.SetActive(false);
+    }
+
+    public void EndAngryPrompt()
+    {
+        endOfDialogue = true;
+    }
+
+    public void RemoveAngryPrompt()
+    {
+        Destroy(gameObject);
     }
 
     public void NextLine()
@@ -131,7 +141,10 @@ public class DialogueController : MonoBehaviour
 
             StartCoroutine(TypeText());
         }
-        else { // Diables angry prompt
+        else if (gameObject.CompareTag("AngryPrompt")) { 
+            EndAngryPrompt();
+        }
+        else {
             EndDialogue();
         }
     }

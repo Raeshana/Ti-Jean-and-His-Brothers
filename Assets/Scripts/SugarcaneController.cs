@@ -11,7 +11,7 @@ public class SugarcaneController : MonoBehaviour
     [SerializeField] SugarcaneManager sugarcaneManager;
     [SerializeField] DevilController devilController;
 
-    [SerializeField] AngryPrompt angryPrompt;
+    [SerializeField] DialogueController sugarcanePrompt;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,7 @@ public class SugarcaneController : MonoBehaviour
         // Start dialogue prompt after player chopped half of the sugarcane
         if (sugarcaneManager.sugarcaneChopped >= (sugarcaneManager.numSugarcane/2 - 1))
         {
-            angryPrompt.StartDialogue(); 
+            sugarcanePrompt.StartDialogue();
         }
 
         sugarcaneManager.incrementSugarcaneChopped(); // Update sugarcane chopped HUD
@@ -48,7 +48,7 @@ public class SugarcaneController : MonoBehaviour
         // Start dialogue prompt after player collected half of the sugarcane
         if (sugarcaneManager.sugarcaneColl >= (sugarcaneManager.numSugarcane/2 - 1))
         {
-            angryPrompt.StartDialogue(); 
+            sugarcanePrompt.StartDialogue();; 
         }
         
         sugarcaneManager.incrementSugarcaneColl(); // Update sugarcane collected HUD

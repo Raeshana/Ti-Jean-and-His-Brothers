@@ -7,7 +7,6 @@ TagManager:
   - Sugarcane_uncut
   - AngryPrompt
   - Dialogue
-  - SugarcaneDialogue
   layers:
   - Default
   - TransparentFX

@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 4674127579893988476}
   - component: {fileID: 6630773164867991676}
   - component: {fileID: 6601316393496010094}
-  - component: {fileID: 9174535367577589460}
+  - component: {fileID: 4993925086437700673}
   m_Layer: 5
   m_Name: AngryPrompt
   m_TagString: AngryPrompt
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
---- !u!114 &9174535367577589460
+--- !u!114 &4993925086437700673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -313,12 +313,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5589042523693656577}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a400507fe529df43bba222fede26198, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f5227c99aefea94e883906dacca4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 7781119535212946272}
-  textSpeed: 0.03
-  text: ooga boonga
+  textAndSpeakers: []
+  dialoguePortrait: {fileID: 0}
+  title: {fileID: 0}
+  speakerHeaders: []
+  textSpeed: 0
+  interactKey: 0
+  endOfDialogue: 0
 --- !u!1 &6498655329536274226
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,7 +749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DialogueController, Assembly-CSharp
+      value: AngryPrompt, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8423625513571252624, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_Name
