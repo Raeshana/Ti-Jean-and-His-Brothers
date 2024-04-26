@@ -27,28 +27,27 @@ public class DialogueController : MonoBehaviour
         public string title;
     };
 
-    // Array of text and their corresponding speakers
-    [Tooltip("Dialogue and corresponding speakers. Must have at least one.")]
+    [Header("-------- Dialogue and Corresponding Speakers ---------")]
+    [Tooltip("Must have at least one.")]
     [SerializeField] TextAndSpeaker[] textAndSpeakers;
 
-    // Portraits for each speaker
+    [Header("-------- Attributes ---------")]
     [SerializeField] GameObject dialoguePortrait;
-
-    // Title for each speaker
     [SerializeField] TMP_Text title;
 
-    // Speaker headers
+    [Header("-------- Speaker Headers: Portraits and Titles ---------")]
     [Tooltip("0. Devil 1. Player")]
     [SerializeField] SpeakerHeader[] speakerHeaders;
 
-    // Dialogue variables
+    [Header("-------- Dialogue Variables ---------")]
     private TMP_Text dialogue; // Dialogue box text
     [Tooltip("Speed of typing effect.")]
     [SerializeField] float textSpeed;
     private int index; // Line of dialogue
     [SerializeField] KeyCode interactKey; // Key to interact with
     public bool endOfDialogue; // If true, dialogue has ended
-
+    [SerializeField] SFXAudioManager audioManager;
+    
     void Start()
     {
         endOfDialogue = false;
@@ -81,22 +80,24 @@ public class DialogueController : MonoBehaviour
         endOfDialogue = false;
 
         ChangeHeader(); // Change speaker header: portrait and title
-
         StartCoroutine(TypeText()); // Typing effect
     }
 
     // Change portrait and title depending on speaker
-    public void ChangeHeader()
+    // Play typing audio when character changes
+    private void ChangeHeader()
     {
         switch(textAndSpeakers[index].speaker)
         {
             case Speaker.DEVIL:
                 dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[0].portrait;
                 title.text = speakerHeaders[0].title;
+                audioManager.PlaySFX(audioManager.typing); // Play typing audio
                 break;
             case Speaker.PLAYER:
                 dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[1].portrait;
                 title.text = speakerHeaders[1].title;
+                audioManager.PlaySFX(audioManager.typing); // Play typing audio
                 break;
             default:
                 break;
@@ -113,26 +114,29 @@ public class DialogueController : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
-
+    
+    [ContextMenu("Set end of dialogue to true and disable")]
     public void EndDialogue()
     {
         endOfDialogue = true;
         gameObject.SetActive(false);
     }
 
+    [ContextMenu("Set end of angry prompt to true")]
     public void EndAngryPrompt()
     {
         endOfDialogue = true;
     }
 
+    [ContextMenu("Remove angry prompt")]
     public void RemoveAngryPrompt()
     {
         Destroy(gameObject);
     }
 
-    public void NextLine()
+    private void NextLine()
     {
-        if (index < textAndSpeakers.Length - 1)
+        if (index < textAndSpeakers.Length - 1) // Not the last line of dialogue
         {
             index++;
             dialogue.text = string.Empty;
@@ -141,10 +145,10 @@ public class DialogueController : MonoBehaviour
 
             StartCoroutine(TypeText());
         }
-        else if (gameObject.CompareTag("AngryPrompt")) { 
+        else if (gameObject.CompareTag("AngryPrompt")) { // Last line of dialogue, angry prompt
             EndAngryPrompt();
         }
-        else {
+        else { // Last line of dialogue, normal dialogue
             EndDialogue();
         }
     }

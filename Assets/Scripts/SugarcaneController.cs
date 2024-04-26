@@ -21,37 +21,38 @@ public class SugarcaneController : MonoBehaviour
 
     void Update()
     {
-        if (devilController.hasReported) // Reported to the Devil after chopping all sugarcane
+        // Player can collect sugarcane after reporting to Devil
+        if (devilController.hasReported) 
         {
-            collect.SetActive(true);
+            collect.SetActive(true); 
         }
     }
 
     public void ChopSugarcane()
     {
-        chop.SetActive(false);
-        _sr.color = Color.black; // Chopped
+        // Chopped
+        chop.SetActive(false); // Cannot chop same sugarcane more than once
+        _sr.color = Color.black; // Change sugarcane sprite
+        sugarcaneManager.incrementSugarcaneChopped(); // Update sugarcane chopped HUD
         
         // Start dialogue prompt after player chopped half of the sugarcane
         if (sugarcaneManager.sugarcaneChopped >= (sugarcaneManager.numSugarcane/2 - 1))
         {
             sugarcanePrompt.StartDialogue();
         }
-
-        sugarcaneManager.incrementSugarcaneChopped(); // Update sugarcane chopped HUD
     }
 
     public void CollectSugarcane()
     {
-        Destroy(gameObject); 
+        // Collected
+        Destroy(gameObject); // Remove sugarcane
+        sugarcaneManager.incrementSugarcaneColl(); // Update sugarcane collected HUD
 
         // Start dialogue prompt after player collected half of the sugarcane
         if (sugarcaneManager.sugarcaneColl >= (sugarcaneManager.numSugarcane/2 - 1))
         {
             sugarcanePrompt.StartDialogue();; 
         }
-        
-        sugarcaneManager.incrementSugarcaneColl(); // Update sugarcane collected HUD
     }
 
     // public void BurnSugarcane()
