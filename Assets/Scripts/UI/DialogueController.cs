@@ -120,11 +120,11 @@ public class DialogueController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void EndAngryPrompt()
-    {
-        endOfDialogue = false;
-        gameObject.SetActive(false);
-    }
+    // public void EndAngryPrompt()
+    // {
+    //     endOfDialogue = false;
+    //     gameObject.SetActive(false);
+    // }
 
     public void NextLine()
     {
@@ -137,8 +137,12 @@ public class DialogueController : MonoBehaviour
 
             StartCoroutine(TypeText());
         }
-        else if (gameObject.tag == "Dialogue") { // Diables angry prompt
+        else { // Diables angry prompt
             EndDialogue();
+            // if (gameObject.tag == "SugarcaneDialogue")
+            // {
+
+            // } 
         }
     }
 }

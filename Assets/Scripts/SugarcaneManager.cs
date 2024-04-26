@@ -5,24 +5,33 @@ using TMPro;
 
 public class SugarcaneManager : MonoBehaviour
 {
-    [SerializeField] int numSugarcane;
+    public int numSugarcane;
     private TMP_Text sugarcaneHUD;
 
     [SerializeField] GameObject sugarcaneChoppedGO;
-    private int sugarcaneChopped;
+    public int sugarcaneChopped;
 
     [SerializeField] GameObject sugarcaneCollGO;
-    private int sugarcaneColl;
+    public int sugarcaneColl;
 
     [SerializeField] GameObject sugarcaneBurnedGO;
-    private int sugarcaneBurned;
+    public int sugarcaneBurned;
 
     [SerializeField] DevilController devilController;
 
+    [SerializeField] GameObject timer;
+ 
     void Update()
     {
-        if (devilController.hasReported) // reported to the Devil after chopping all sugarcane
+        if (devilController.hasTalked) // Talked to the Devil, enable HUD
         {
+            sugarcaneChoppedGO.SetActive(true);
+            timer.SetActive(true);
+        }
+
+        if (devilController.hasReported) // Reported to the Devil after chopping all sugarcane
+        {
+            sugarcaneChoppedGO.SetActive(false);
             sugarcaneCollGO.SetActive(true);
         }
     }
@@ -61,16 +70,16 @@ public class SugarcaneManager : MonoBehaviour
 
     public bool isAllChopped()
     {
-        return isAllSugarcane(sugarcaneChopped);
+        return (sugarcaneChopped == numSugarcane);
     }
 
     public bool isAllCollected()
     {
-        return isAllSugarcane(sugarcaneColl);
+        return (sugarcaneColl == numSugarcane);
     }
 
     public bool isAllBurned()
     {
-        return isAllSugarcane(sugarcaneBurned);
+        return (sugarcaneBurned == numSugarcane);
     }
 }
