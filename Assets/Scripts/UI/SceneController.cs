@@ -120,4 +120,25 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync("CreditsScreen");
     }
+
+    [ContextMenu("Go to About Screen")]
+    public void GoToAboutScreen()
+    {
+        int current = SceneManager.GetActiveScene().buildIndex;
+
+        if (SceneManager.loadedSceneCount <= 1f) // checks if menu is already loaded
+        {
+            SceneManager.LoadScene("AboutScreen", LoadSceneMode.Additive);
+        }
+        else if (SceneManager.GetSceneByName("AboutScreen").isLoaded) // menu loaded is CreditsScreen
+        {
+            UnloadAboutScreen();
+        }
+    }
+
+    [ContextMenu("Unload About Screen")]
+    public void UnloadAboutScreen()
+    {
+        SceneManager.UnloadSceneAsync("AboutScreen");
+    }
 }

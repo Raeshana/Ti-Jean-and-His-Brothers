@@ -11,8 +11,8 @@ public class DialogueTransition : MonoBehaviour
     {
         if (prev.endOfDialogue)
         {
-            next.StartDialogue();
             prev.endOfDialogue = false;
+            next.StartDialogue();
         }
     }
 }
