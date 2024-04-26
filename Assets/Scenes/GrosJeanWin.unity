@@ -161,11 +161,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RestartLevel
+      value: GoToLevelOne
       objectReference: {fileID: 0}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -562,7 +566,7 @@ PrefabInstance:
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2033519248}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -759,6 +763,10 @@ PrefabInstance:
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -1038,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.size
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: speakerHeaders.Array.data[0].title
@@ -1094,6 +1102,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[10].text
+      value: '*swallows Gros Jean in one bite*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textAndSpeakers.Array.data[11].text
       value: UN!
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
@@ -1103,7 +1115,7 @@ PrefabInstance:
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: speakerHeaders.Array.data[2].portrait
       value: 
-      objectReference: {fileID: -1447466803, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
+      objectReference: {fileID: 21300000, guid: 25243ae0e9ece0d4ab5a832b0159e1f6, type: 3}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[0].speaker
       value: 0
@@ -1146,6 +1158,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[10].speaker
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: textAndSpeakers.Array.data[11].speaker
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}

@@ -15,6 +15,12 @@ public class SceneController : MonoBehaviour
     [ContextMenu("Go to next level")]
     public void GoToNextLevel()
     {
+        SceneManager.LoadScene("GrosJean");
+    }
+
+    [ContextMenu("Go to level one")]
+    public void GoToLevelOne()
+    {
         StartCoroutine(GoToNextLevelRoutine());
     }
 
