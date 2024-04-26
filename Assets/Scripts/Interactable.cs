@@ -6,17 +6,19 @@ using TMPro;
 
 public class Interactable : MonoBehaviour
 {
+    [Header("-------- Interact ---------")]
     public bool isInRange;
     [SerializeField] KeyCode interactKey;
     [SerializeField] UnityEvent interactAction;
 
-    private TMP_Text _instruction;
+    [Header("-------- Instructions ---------")]
+    private TMP_Text instruction;
     [SerializeField] string instructionMsg;
     [SerializeField] GameObject instructionPanel;
 
     void Start()
     {
-        _instruction = GetComponentInChildren<TextMeshProUGUI>();
+        instruction = GetComponentInChildren<TextMeshProUGUI>();
     } 
 
     // Update is called once per frame
@@ -24,7 +26,7 @@ public class Interactable : MonoBehaviour
     {
         if (isInRange) // in range to interact
         {
-            _instruction.text = instructionMsg; // makes instructions visible
+            instruction.text = instructionMsg; // makes instructions visible
             instructionPanel.SetActive(true); // makes instruction panel visible
 
             if (Input.GetKeyDown(interactKey)) // player presses key
@@ -33,7 +35,7 @@ public class Interactable : MonoBehaviour
             }
         }
         else{
-            _instruction.text = ""; // makes instructions invisible
+            instruction.text = ""; // makes instructions invisible
             instructionPanel.SetActive(false); // makes instruction panel invisible
         }
     }
@@ -43,7 +45,6 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = true;
-            //Debug.Log("Player in range");
         }
     }
 
@@ -52,7 +53,6 @@ public class Interactable : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isInRange = false;
-            //Debug.Log("Player not in range");
         }
     }
 }

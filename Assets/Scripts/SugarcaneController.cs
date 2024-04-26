@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class SugarcaneController : MonoBehaviour
 {
+    [Header("-------- Interactables ---------")]
     [SerializeField] GameObject chop;
     [SerializeField] GameObject collect;
-    private SpriteRenderer _sr;
+    private SpriteRenderer sr;
 
+    [Header("-------- Other ---------")]
     [SerializeField] SugarcaneManager sugarcaneManager;
     [SerializeField] DevilController devilController;
-
     [SerializeField] DialogueController sugarcanePrompt;
+    [SerializeField] Sprite sugarcane;
 
     // Start is called before the first frame update
     void Start()
     {
-        _sr = GetComponent<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -32,7 +34,7 @@ public class SugarcaneController : MonoBehaviour
     {
         // Chopped
         chop.SetActive(false); // Cannot chop same sugarcane more than once
-        _sr.color = Color.black; // Change sugarcane sprite
+        sr.sprite = sugarcane; // Change sugarcane sprite
         sugarcaneManager.incrementSugarcaneChopped(); // Update sugarcane chopped HUD
         
         // Start dialogue prompt after player chopped half of the sugarcane
