@@ -14,8 +14,8 @@ public class SugarcaneManager : MonoBehaviour
     [SerializeField] GameObject sugarcaneCollGO;
     public int sugarcaneColl;
 
-    [SerializeField] GameObject sugarcaneBurnedGO;
-    public int sugarcaneBurned;
+    // [SerializeField] GameObject sugarcaneBurnedGO;
+    // public int sugarcaneBurned;
 
     [SerializeField] DevilController devilController;
 
@@ -23,17 +23,27 @@ public class SugarcaneManager : MonoBehaviour
  
     void Update()
     {
-        if (devilController.hasTalked) // Talked to the Devil, enable HUD
+        // Enable chop HUD if player talked to Devil and it isn't already enabled
+        if (devilController.hasTalked && !timer.activeSelf) 
         {
+            initializeSugarcane(sugarcaneChoppedGO, sugarcaneChopped, "Sugarcane Chopped: ");
             sugarcaneChoppedGO.SetActive(true);
             timer.SetActive(true);
         }
 
-        if (devilController.hasReported) // Reported to the Devil after chopping all sugarcane
+        // Enable collect HUD and disable chop HUD if player has reproted to Devil
+        if (devilController.hasReported) 
         {
+            initializeSugarcane(sugarcaneCollGO, sugarcaneColl, "Sugarcane Collected: ");
             sugarcaneChoppedGO.SetActive(false);
             sugarcaneCollGO.SetActive(true);
         }
+    }
+
+    private void initializeSugarcane(GameObject sugarcaneGO, int sugarcane, string message)
+    {
+        sugarcaneHUD = sugarcaneGO.GetComponentInChildren<TMP_Text>();
+        sugarcaneHUD.text = message + sugarcane + "/" + numSugarcane;
     }
 
     private int incrementSugarcane(GameObject sugarcaneGO, int sugarcane, string message)
@@ -63,10 +73,10 @@ public class SugarcaneManager : MonoBehaviour
         sugarcaneColl = incrementSugarcane(sugarcaneCollGO, sugarcaneColl, "Sugarcane Collected: ");
     }
 
-    public void incrementSugarcaneBurned()
-    {
-        sugarcaneBurned = incrementSugarcane(sugarcaneBurnedGO, sugarcaneBurned, "Sugarcane Burned: ");
-    }
+    // public void incrementSugarcaneBurned()
+    // {
+    //     sugarcaneBurned = incrementSugarcane(sugarcaneBurnedGO, sugarcaneBurned, "Sugarcane Burned: ");
+    // }
 
     public bool isAllChopped()
     {
@@ -78,8 +88,8 @@ public class SugarcaneManager : MonoBehaviour
         return (sugarcaneColl == numSugarcane);
     }
 
-    public bool isAllBurned()
-    {
-        return (sugarcaneBurned == numSugarcane);
-    }
+    // public bool isAllBurned()
+    // {
+    //     return (sugarcaneBurned == numSugarcane);
+    // }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DialogueController : MonoBehaviour
+public class SugarcanePrompt : MonoBehaviour
 {
     [System.Serializable]
     public enum Speaker
@@ -41,8 +41,12 @@ public class DialogueController : MonoBehaviour
     [Tooltip("0. Devil 1. Player")]
     [SerializeField] SpeakerHeader[] speakerHeaders;
 
+    // Game Object for angry prompt
+    [SerializeField] GameObject angryPrompt;
+
     // Dialogue variables
-    private TMP_Text dialogue; // Dialogue box text
+    [Tooltip("Dialogue box text.")]
+    [SerializeField] TMP_Text dialogue;
     [Tooltip("Speed of typing effect.")]
     [SerializeField] float textSpeed;
     private int index; // Line of dialogue
@@ -118,6 +122,7 @@ public class DialogueController : MonoBehaviour
     {
         //endOfDialogue = true;
         gameObject.SetActive(false);
+        angryPrompt.SetActive(true);
     }
 
     public void NextLine()

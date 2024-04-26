@@ -220,8 +220,8 @@ GameObject:
   - component: {fileID: 7194979401206245364}
   - component: {fileID: 4674127579893988476}
   - component: {fileID: 6630773164867991676}
-  - component: {fileID: 5253375344318489718}
   - component: {fileID: 6601316393496010094}
+  - component: {fileID: 9174535367577589460}
   m_Layer: 5
   m_Name: AngryPrompt
   m_TagString: AngryPrompt
@@ -291,31 +291,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5253375344318489718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5589042523693656577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5227c99aefea94e883906dacca4217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textAndSpeakers:
-  - text: Is vex yuh vex?
-    speaker: 0
-  dialoguePortrait: {fileID: 3530422439270723387}
-  title: {fileID: 5003159265887375196}
-  speakerHeaders:
-  - portrait: {fileID: -1418832059, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
-    title: DEVIL
-  - portrait: {fileID: 1986226018, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
-    title: GROS JEAN
-  textSpeed: 0.03
-  interactKey: 32
-  endOfDialogue: 0
 --- !u!114 &6601316393496010094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,6 +304,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
+--- !u!114 &9174535367577589460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5589042523693656577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a400507fe529df43bba222fede26198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 7781119535212946272}
+  textSpeed: 0.03
+  text: ooga boonga
 --- !u!1 &6498655329536274226
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,10 +739,6 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5253375344318489718}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EndDialogue

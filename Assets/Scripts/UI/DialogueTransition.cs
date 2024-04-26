@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class DialogueTransition : MonoBehaviour
 {
-    [SerializeField] DialogueController prev;
-    [SerializeField] DialogueController next;
+    // [SerializeField] DialogueController prev;
+    // [SerializeField] DialogueController next;
 
     void Update()
     {
-        if (prev.endOfDialogue)
-        {
-            prev.endOfDialogue = false;
-            next.StartDialogue();
-        }
+        // if (prev.endOfDialogue)
+        // {
+        //     prev.endOfDialogue = false;
+        //     next.StartDialogue();
+        // }
     }
 }

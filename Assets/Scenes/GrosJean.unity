@@ -213,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: speakerHeaders.Array.data[0].title
-      value: DEVIL
+      value: PLANTER
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: speakerHeaders.Array.data[1].title
@@ -11006,11 +11006,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f5227c99aefea94e883906dacca4217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &168050627 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-  m_PrefabInstance: {fileID: 1214931045}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &239969696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5081457518067874799, guid: 81ebc52542bd0c74cb144f689ddbbb8a, type: 3}
@@ -11269,9 +11264,17 @@ PrefabInstance:
       value: Sugarcane (7)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -11279,7 +11282,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -11353,13 +11356,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4840fb6cc6269114cbd4a265265d6c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numSugarcane: 1
+  numSugarcane: 4
   sugarcaneChoppedGO: {fileID: 1380689797}
   sugarcaneChopped: 0
   sugarcaneCollGO: {fileID: 1553590128}
   sugarcaneColl: 0
-  sugarcaneBurnedGO: {fileID: 0}
-  sugarcaneBurned: 0
   devilController: {fileID: 903977547695624560}
   timer: {fileID: 1982784817}
 --- !u!1 &479890530 stripped
@@ -11428,9 +11429,17 @@ PrefabInstance:
       value: Sugarcane (5)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -11438,7 +11447,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -11625,9 +11634,17 @@ PrefabInstance:
       value: Sugarcane (4)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -11635,7 +11652,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -11716,9 +11733,17 @@ PrefabInstance:
       value: Sugarcane (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -11726,7 +11751,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -11836,9 +11861,17 @@ PrefabInstance:
       value: Sugarcane (8)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -11846,7 +11879,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -11927,9 +11960,17 @@ PrefabInstance:
       value: Sugarcane (10)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -11937,7 +11978,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -12018,9 +12059,17 @@ PrefabInstance:
       value: Sugarcane (9)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -12028,7 +12077,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -12047,183 +12096,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3142787361682891448, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
   m_PrefabInstance: {fileID: 950968555}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1214931045
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2651270475236991961}
-    m_Modifications:
-    - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_Name
-      value: Sugarcane
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_TagString
-      value: SugarcaneDialogue
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: timer
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: endOfDialogue
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: speakerHeaders.Array.data[0].title
-      value: DEVIL
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: speakerHeaders.Array.data[1].title
-      value: GROS JEAN
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[0].text
-      value: Ay, ay!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[1].text
-      value: Look at yuh!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[2].text
-      value: Yuh gettin dem sugarcane fast fast boy!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[3].text
-      value: Boss!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[4].text
-      value: How yuh go harass meh and waste meh time so?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[5].text
-      value: But what is dis?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[6].text
-      value: I wonder, Gros Jean...
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: speakerHeaders.Array.data[1].portrait
-      value: 
-      objectReference: {fileID: 1986226018, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[3].speaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[4].speaker
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: textAndSpeakers.Array.data[5].speaker
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1320
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 310
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -315
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1969136405}
-  m_SourcePrefab: {fileID: 100100000, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
---- !u!224 &1214931046 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7907312948076938429, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-  m_PrefabInstance: {fileID: 1214931045}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1354306391
 PrefabInstance:
@@ -12286,9 +12158,17 @@ PrefabInstance:
       value: Sugarcane (6)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -12296,7 +12176,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -12387,9 +12267,17 @@ PrefabInstance:
       value: Sugarcane (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -12397,7 +12285,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -32518,7 +32406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: speakerHeaders.Array.data[0].title
-      value: DEVIL
+      value: PLANTER
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: speakerHeaders.Array.data[1].title
@@ -33153,30 +33041,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 241046330}
---- !u!114 &1969136402 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
-  m_PrefabInstance: {fileID: 1214931045}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168050627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5227c99aefea94e883906dacca4217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1969136405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168050627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82f69fb7cd550e447838a18b4ec323ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: {fileID: 241046330}
 --- !u!1 &1982784817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6871542914572651493, guid: a480b31bf28e4754b8d0846e30db4fd1, type: 3}
@@ -33509,24 +33373,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 2651270475236991961}
     m_Modifications:
     - target: {fileID: 1463198635717565293, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 1463198635717565293, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndAngryPrompt
+      value: EndDialogue
       objectReference: {fileID: 0}
-    - target: {fileID: 5253375344318489718, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5253375344318489718, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
-      propertyPath: interactKey
-      value: 282
+    - target: {fileID: 1463198635717565293, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AngryPrompt, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5589042523693656577, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
       propertyPath: m_Name
       value: AngryPrompt
-      objectReference: {fileID: 0}
-    - target: {fileID: 5589042523693656577, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5940317268177639090, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -33616,6 +33476,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9174535367577589460, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
+      propertyPath: text
+      value: You tired yet?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33672,11 +33536,11 @@ PrefabInstance:
     - target: {fileID: 3590509996456070474, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       propertyPath: next
       value: 
-      objectReference: {fileID: 6907190726068638383}
+      objectReference: {fileID: 0}
     - target: {fileID: 3590509996456070474, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       propertyPath: prev
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 4328585304046166061, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       propertyPath: dialogueControllers.Array.size
       value: 5
@@ -33696,11 +33560,11 @@ PrefabInstance:
     - target: {fileID: 4328585304046166061, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       propertyPath: dialogueControllers.Array.data[3]
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 4328585304046166061, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       propertyPath: dialogueControllers.Array.data[4]
       value: 
-      objectReference: {fileID: 6907190726068638383}
+      objectReference: {fileID: 0}
     - target: {fileID: 5221947400424846435, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       propertyPath: m_Name
       value: DialogueManager
@@ -33708,11 +33572,11 @@ PrefabInstance:
     - target: {fileID: 5753162841103604074, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       propertyPath: next
       value: 
-      objectReference: {fileID: 6907190726068638383}
+      objectReference: {fileID: 0}
     - target: {fileID: 5753162841103604074, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       propertyPath: prev
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -33725,9 +33589,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2561769180890950005, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1594967145}
-    - targetCorrespondingSourceObject: {fileID: 2561769180890950005, guid: b4567c389c447d043830a4b9383090ec, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1214931046}
     - targetCorrespondingSourceObject: {fileID: 2561769180890950005, guid: b4567c389c447d043830a4b9383090ec, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7907312947223292164}
@@ -33792,7 +33653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: speakerHeaders.Array.data[0].title
-      value: DEVIL
+      value: PLANTER
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: speakerHeaders.Array.data[1].title
@@ -33967,9 +33828,17 @@ PrefabInstance:
       value: Sugarcane
       objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: angryPrompt
+      value: 
+      objectReference: {fileID: 7907312947223292168}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: devilController
       value: 
       objectReference: {fileID: 903977547695624560}
+    - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
+      propertyPath: sugarcanePrompt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: sugarcaneManager
       value: 
@@ -33977,7 +33846,7 @@ PrefabInstance:
     - target: {fileID: 5327517794476164073, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: dialogueController
       value: 
-      objectReference: {fileID: 1969136402}
+      objectReference: {fileID: 0}
     - target: {fileID: 7860961669783249299, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 5
@@ -33992,22 +33861,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8248a54111fb0e14d99c4701517d25f7, type: 3}
---- !u!114 &6907190726068638383 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5253375344318489718, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
-  m_PrefabInstance: {fileID: 2047314877630550833}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5227c99aefea94e883906dacca4217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &7907312947223292164 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7194979401206245364, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
   m_PrefabInstance: {fileID: 2047314877630550833}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7907312947223292168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9174535367577589460, guid: 546639e2806cca4478dc67d728a7e8e6, type: 3}
+  m_PrefabInstance: {fileID: 2047314877630550833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a400507fe529df43bba222fede26198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

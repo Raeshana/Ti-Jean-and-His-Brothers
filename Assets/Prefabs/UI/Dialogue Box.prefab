@@ -516,9 +516,9 @@ MonoBehaviour:
   title: {fileID: 3157668876483266248}
   speakerHeaders:
   - portrait: {fileID: -1418832059, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
-    title: Devil
+    title: PLANTER
   - portrait: {fileID: 1986226018, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
-    title: Gros Jean
+    title: GROS JEAN
   textSpeed: 0.03
   interactKey: 32
   endOfDialogue: 0
