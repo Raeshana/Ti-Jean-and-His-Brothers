@@ -15,13 +15,13 @@ public class SceneController : MonoBehaviour
     [ContextMenu("Go to next level")]
     public void GoToNextLevel()
     {
-        SceneManager.LoadScene("GrosJean");
+        StartCoroutine(GoToNextLevelRoutine());
     }
 
     [ContextMenu("Go to level one")]
     public void GoToLevelOne()
     {
-        StartCoroutine(GoToNextLevelRoutine());
+        SceneManager.LoadScene("GrosJean");
     }
 
     private IEnumerator GoToNextLevelRoutine()
