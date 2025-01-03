@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PlayButtonAudio : MonoBehaviour
 {
-    [SerializeField] SFXAudioManager audioManager;
+    private SFXAudioManager audioManager;
     
+    void Start() {
+        audioManager = GetComponent<SFXAudioManager>();
+    }
+
     public void PlayAudio()
     {
         audioManager.PlaySFX(audioManager.button); // Play chop audio
