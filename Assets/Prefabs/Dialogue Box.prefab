@@ -514,14 +514,11 @@ MonoBehaviour:
   textAndSpeakers: []
   dialoguePortrait: {fileID: 853933479930344050}
   title: {fileID: 3157668876483266248}
-  speakerHeaders:
-  - portrait: {fileID: -1418832059, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
-    title: PLANTER
-  - portrait: {fileID: 1986226018, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
-    title: GROS JEAN
+  characterManager: {fileID: 85396718907548644, guid: 95dbeebd7ff339e419c77efb55353df1, type: 3}
   textSpeed: 0.03
   interactKey: 32
   endOfDialogue: 0
+  audioManager: {fileID: 0}
 --- !u!1 &8637825422986114692
 GameObject:
   m_ObjectHideFlags: 0

@@ -319,10 +319,11 @@ MonoBehaviour:
   textAndSpeakers: []
   dialoguePortrait: {fileID: 0}
   title: {fileID: 0}
-  speakerHeaders: []
+  characterManager: {fileID: 85396718907548644, guid: 95dbeebd7ff339e419c77efb55353df1, type: 3}
   textSpeed: 0
   interactKey: 0
   endOfDialogue: 0
+  audioManager: {fileID: 0}
 --- !u!1 &6498655329536274226
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +601,7 @@ PrefabInstance:
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 8870157241041108038}
+      objectReference: {fileID: 0}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -715,17 +716,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9029186040423099217, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
   m_PrefabInstance: {fileID: 4210378268770892908}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8870157241041108038 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4717350983796113450, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
-  m_PrefabInstance: {fileID: 4210378268770892908}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 001e29b33aca4ff4fa5ba114d1ea3c79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8957704495933698483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -793,7 +783,7 @@ PrefabInstance:
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 4406575966467256729}
+      objectReference: {fileID: 0}
     - target: {fileID: 7502570022251014878, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -912,14 +902,3 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9029186040423099217, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
   m_PrefabInstance: {fileID: 8957704495933698483}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4406575966467256729 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4717350983796113450, guid: 7db7276990859d041b8fdcb61636ff42, type: 3}
-  m_PrefabInstance: {fileID: 8957704495933698483}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 001e29b33aca4ff4fa5ba114d1ea3c79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

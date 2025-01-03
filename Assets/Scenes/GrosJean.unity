@@ -168,6 +168,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: characterManager
+      value: 
+      objectReference: {fileID: 85396718907548644, guid: 95dbeebd7ff339e419c77efb55353df1, type: 3}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: text.Array.data[0]
       value: All the sugarcane done chop boss!
       objectReference: {fileID: 0}
@@ -349,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 1986226018, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[0].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[1].speaker
@@ -357,15 +361,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[2].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[3].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[4].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[5].speaker
@@ -373,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[6].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[7].speaker
@@ -381,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[9].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textandSpeakers.Array.data[0].speaker
@@ -413,7 +417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[10].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[11].speaker
@@ -421,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[14].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[15].speaker
@@ -13516,7 +13520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4840fb6cc6269114cbd4a265265d6c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numSugarcane: 10
+  numSugarcane: 1
   sugarcaneChoppedGO: {fileID: 1380689797}
   sugarcaneChopped: 0
   sugarcaneCollGO: {fileID: 1553590128}
@@ -13822,11 +13826,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[0].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[1].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[2].speaker
@@ -35201,11 +35205,11 @@ PrefabInstance:
       objectReference: {fileID: 1986226018, guid: cfa710a79dd51d44a92e339ab8c3087a, type: 3}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[0].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[1].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[2].speaker
@@ -35213,23 +35217,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[4].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[5].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[6].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[7].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[8].speaker
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: textAndSpeakers.Array.data[9].speaker
@@ -37051,6 +37055,10 @@ PrefabInstance:
       propertyPath: endOfDialogue
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
+      propertyPath: characterManager
+      value: 
+      objectReference: {fileID: 85396718907548644, guid: 95dbeebd7ff339e419c77efb55353df1, type: 3}
     - target: {fileID: 6907190726784712470, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: text.Array.data[0]
       value: Go and chop down all dem sugarcane in de field boy.

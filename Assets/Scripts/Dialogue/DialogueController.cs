@@ -9,9 +9,11 @@ public class DialogueController : MonoBehaviour
     [System.Serializable]
     public enum Speaker
     {
-        PLANTER = 0,
-        PLAYER = 1,
-        DEVIL
+        PLANTER,
+        DEVIL,
+        GROSJEAN,
+        MIJEAN,
+        TIJEAN
     };
 
     [System.Serializable]
@@ -19,13 +21,6 @@ public class DialogueController : MonoBehaviour
     {
         public string text;
         public Speaker speaker;
-    };
-
-    [System.Serializable]
-    public struct SpeakerHeader
-    {
-        public Sprite portrait;
-        public string title;
     };
 
     [Header("-------- Dialogue and Corresponding Speakers ---------")]
@@ -37,8 +32,7 @@ public class DialogueController : MonoBehaviour
     [SerializeField] TMP_Text title;
 
     [Header("-------- Speaker Headers: Portraits and Titles ---------")]
-    [Tooltip("0. Devil 1. Player")]
-    [SerializeField] SpeakerHeader[] speakerHeaders;
+    [SerializeField] CharacterManager characterManager;
 
     [Header("-------- Dialogue Variables ---------")]
     private TMP_Text dialogue; // Dialogue box text
@@ -93,16 +87,16 @@ public class DialogueController : MonoBehaviour
         switch(textAndSpeakers[index].speaker)
         {
             case Speaker.PLANTER:
-                dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[0].portrait;
-                title.text = speakerHeaders[0].title;
-                break;
-            case Speaker.PLAYER:
-                dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[1].portrait;
-                title.text = speakerHeaders[1].title;
+                dialoguePortrait.GetComponent<Image>().sprite = characterManager.PlanterSO.portrait;
+                title.text = characterManager.PlanterSO.title;
                 break;
             case Speaker.DEVIL:
-                dialoguePortrait.GetComponent<Image>().sprite = speakerHeaders[2].portrait;
-                title.text = speakerHeaders[2].title;
+                dialoguePortrait.GetComponent<Image>().sprite = characterManager.DevilSO.portrait;
+                title.text = characterManager.DevilSO.title;
+                break;
+            case Speaker.GROSJEAN:
+                dialoguePortrait.GetComponent<Image>().sprite = characterManager.GrosJeanSO.portrait;
+                title.text = characterManager.GrosJeanSO.title;
                 break;
             default:
                 break;
