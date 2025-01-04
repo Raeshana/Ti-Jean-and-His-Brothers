@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_Name
-      value: ReporttoDevil
+      value: ReporttoPlanter
       objectReference: {fileID: 0}
     - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_IsActive
@@ -35101,7 +35101,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_Name
-      value: GivetoDevil
+      value: GivetoPlanter
       objectReference: {fileID: 0}
     - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_IsActive
@@ -37025,7 +37025,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_Name
-      value: TalktoDevil
+      value: TalktoPlanter
       objectReference: {fileID: 0}
     - target: {fileID: 6341029914302523395, guid: cda52754b4e3a3f46882a05a08439077, type: 3}
       propertyPath: m_IsActive
